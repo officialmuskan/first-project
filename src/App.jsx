@@ -1,16 +1,16 @@
 import { useState } from 'react'
-import { sculptureList } from './Data';
+// import { sculptureList } from './Data';
 import './App.css'
 import Alert from './components/Alert';
-import Navbar, {Print} from './components/Navbar';
-import PackingList from './components/List';
+import Navbar from './components/Navbar';
+// import PackingList from './components/List';
 import Textform from './components/textform';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link,
-} from "react-router-dom";
+// import {
+//   BrowserRouter,
+//   Routes,
+//   Route,
+//   Link,
+// } from "react-router-dom";
 import About from './components/About';
 
 
@@ -56,17 +56,19 @@ export default function App(){
     }
   return(
     <>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
     <Navbar title='TextUtils' mode={mode} toggleStyle={toggleStyle} />
     <Alert alert={alert}/>
     
   
   
-      <Routes>
-        <Route path="/" element={<Textform heading = "Text Utils - Text Analyzer" mode={mode} showAlert={showAlert}/>} />
-        <Route path="about/*" element={<About mode={mode}/>} />
+      {/* <Routes> */}
+        {/* <Route path="/" element= */}
+        <Textform heading = "Text Utils - Text Analyzer" mode={mode} showAlert={showAlert}/>
+         {/* /> */}
+        {/* <Route path="about/*" element={<About mode={mode}/>} />
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
 
     
 
