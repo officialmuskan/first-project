@@ -1,0 +1,18 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.square{
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
+  color: cadetblue;
+}
+
+
+
